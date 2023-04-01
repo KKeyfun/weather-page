@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-bg row">
+        <div class="logo">
+            <img src="" alt="">
+            Weather App
+        </div>
+        <div class="searchbar">
+            <input type="text" name="search" id="search">
+            <button class="searchButton">Search</button>
+        </div>
+        <div class="unitSwitch">
+            <button class="toggleUnit" data-unit="c">°C / °F</button>
+        </div>
+    </nav>
+    <main>
+        <div class="container row mainInfo">
+            <div class="col">
+                <p class="mainWeather">---</p>
+                <p class="mainTemperature">---</p>
+                <p class="mainTime">---</p>
+                <p class="mainDate">---</p>
+                <p class="location">---</p>
+            </div>
+        </div>
+    </main>
+    <section class="moreInfo">
+        <div class="container row now">
+            <div class="col">
+                <p>Feels Like</p>
+                <p class="details">---</p>
+            </div>
+            <div class="col">
+                <p>Humidity</p>
+                <p class="details">---</p>
+            </div>
+            <div class="col">
+                <p>Clouds</p>
+                <p class="details">---</p>
+            </div>
+            <div class="col">
+                <p>Wind</p>
+                <p class="details">---</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
