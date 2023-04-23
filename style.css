@@ -11,7 +11,8 @@
 body {
     background-image: url('./sky-7630197_1920.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 1200px;
+    background-position: center;
 }
 
 .container {
@@ -47,6 +48,16 @@ p {
     margin: .5rem 0;
 }
 
+.searchbar {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem;
+
+    margin:3rem;
+}
+
 .mainInfo {
     padding: 1.25rem 0;
 }
@@ -74,4 +85,25 @@ p {
 .now .col {
     flex-basis: 50%;
     font-size: 1.25rem;
+}
+
+@media (min-width: 770px){
+    .mainInfo{
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 1000px){
+    body {
+        background-size: cover;
+    }
+}
+
+@media (min-width:900px) {
+    .searchbar {
+        flex-direction: row;
+    }
+    .now .col{
+        flex-basis: 25%;
+    }
 }
