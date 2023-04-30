@@ -68,12 +68,17 @@ p {
 }
 
 .mainTemperature {
-    font-size: clamp(2.5rem,13vw,85px);
+    font-size: clamp(2.5rem,12vw,70px);
 }
 
 .mainDate,.mainTime,.location {
     font-size: 20px;
     font-size: clamp(1rem,3.5vw,25px);
+}
+
+.mainIcon {
+    background-color: rgb(129, 217, 255);
+    border-radius: 1rem;
 }
 
 .now {

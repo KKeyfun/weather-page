@@ -25,6 +25,7 @@ async function getData(city){
 function display(info){
     localStorage.temperature = JSON.stringify(info.main);
     document.querySelector('.mainWeather').textContent = info.weather[0].description;
+    document.querySelector('.mainIcon').src = `https://openweathermap.org/img/wn/${info.weather[0].icon}@4x.png`
     changeUnits();
     const time = new Date();
     document.querySelector('.mainDate').textContent = `${time.getFullYear()} ${month[time.getMonth()]} ${time.getDate()}`;
